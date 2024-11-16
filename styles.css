@@ -1,0 +1,267 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffe6f0;
+}
+
+main {
+    padding: 40px 100px 40px 100px;
+}
+
+footer {
+    background-color: #d65a94;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #a64277;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #ffcce0;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a64277;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #d65a94;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    color: #fff;
+    background-color: #d65a94;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #ffe6f0;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffcce0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #d65a94;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    background: #fff0f5;
+    padding: 40px 60px 40px 30px;
+    border: 1px solid #ffcce0;
+    border-radius: 5px;
+}
+
+form label {
+    display: inline-block;
+    margin: 10px 15px 10px 0px;
+    font-weight: bold;
+    color: #a64277;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 5px solid #ffcce0;
+    border-radius: 7px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin: 0px 5px 1px 0px;
+}
+
+.form-group {
+    margin: 20px 0px 20px 0px;
+}
+
+form button {
+    background-color: #d65a94;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 55px;
+    font-size: 20px;
+}
+
+.button-group {
+    margin: 70px 200px 20px 200px;
+}
+
+form button:hover {
+    background-color: #a64277;
+}
+
+textarea {
+    resize: none;
+}
+
+#about {
+    height: 150px;
+}
+
+/*articles*/
+
+.comments-header {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.comment-button {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.article-preview {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-title {
+    color: #a64277;
+    text-decoration: none;
+}
+
+.article-title:hover {
+    text-decoration: underline;
+}
+
+.article-summary {
+    color: #555;
+    margin-top: 10px;
+}
+
+.read-more {
+    color: #d65a94;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.comments-link {
+    display: block;
+    margin-top: 15px;
+    color: #a64277;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.comments-link:hover {
+    text-decoration: underline;
+}
+
+/*КАТАЛОГ*/
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.category {
+    background-color: #fff0f5;
+    border: 1px solid #ffcce0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.category h2 {
+    color: #a64277;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    color: #a64277;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
